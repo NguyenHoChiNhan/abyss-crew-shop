@@ -11,5 +11,5 @@
       "dest": "/api/index.php"
     }
   ],
-  "crons": []
+  "nodeVersion": "20.x"
 }
