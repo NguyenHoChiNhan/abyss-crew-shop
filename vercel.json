@@ -7,6 +7,14 @@
   },
   "routes": [
     {
+      "src": "/wp-content/(.*)",
+      "dest": "/wp-content/$1"
+    },
+    {
+      "src": "/wp-includes/(.*)",
+      "dest": "/wp-includes/$1"
+    },
+    {
       "src": "/(.*)",
       "dest": "/api/index.php"
     }
