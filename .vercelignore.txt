@@ -1,0 +1,8 @@
+wp-admin
+wp-content/uploads-old
+wp-content/plugins-old
+wp-content/themes-old
+node_modules
+.git
+*.sql
+*.zip
