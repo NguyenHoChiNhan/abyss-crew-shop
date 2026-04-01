@@ -2,13 +2,22 @@
   "version": 2,
   "functions": {
     "api/index.php": {
-      "runtime": "vercel-php@0.7.1"
+      "runtime": "vercel-php@0.7.1",
+      "config": {
+        "includeFiles": [
+          "wp-config.php",
+          "wp-load.php",
+          "wp-blog-header.php",
+          "wp-settings.php",
+          "wp-includes/**",
+          "wp-admin/**",
+          "wp-content/themes/**",
+          "wp-content/plugins/**"
+        ]
+      }
     }
   },
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/api/index.php"
-    }
+    { "src": "/(.*)", "dest": "/api/index.php" }
   ]
 }
